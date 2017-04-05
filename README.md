@@ -1,5 +1,9 @@
 # GoT-Kill-List
 
-Open up project and run npm install to get all node_modules.
-<br>
-Then just run ng serve to see web application.
+##### Install npm dependencies
+```
+$ npm install
+```
+
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if any source file changes are made.
