@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1449px) {
+  #new-section{
+    float: left;
+    margin-top: 20px;
+  }
+  #new-section .btn {
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  #col-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  h2{
+    font-size: 120%;
+  }
+  #new-section .btn {
+    margin-bottom: 20px;
+  }
+
+  #col-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h2{
+    font-size: 100%;
+  }
+  #new-section .btn {
+    margin-left: 110%;
+    margin-bottom: 20px;
+  }
+
+  #col-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h2{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  //iPhone screen size.
+  #new-section .btn {
+    margin-left: 60%;
+  }
+}

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 845px) {
+
+  .navbar-header a {
+    font-size: 70%;
+  }
+
+  .nav li{
+    margin-left: 20px;
+  }
+
+  .nav li a:link,
+  .nav li a:visited {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-brand { display: none; }
+  .nav { display: none; }
+
+  .mobile-nav-icon {
+    display: inline-block;
+    left: 50px;
+  }
+
+  .nav {
+    float: left;
+    margin-top: 0px;
+    margin-left: 25px;
+  }
+
+  .mobile-navigation
+  {
+    display: block;
+  }
+
+  .nav li a:link,
+  .nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav li a:link,
+  .nav li a:visited {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav li a:link,
+  .nav li a:visited {
+    font-size: 50%;
+  }
+}

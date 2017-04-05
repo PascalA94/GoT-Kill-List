@@ -1,0 +1,86 @@
+@import "../../assets/scss/main";
+
+.navbar{
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-style: none;
+  border-radius: 0;
+  position: absolute;
+  z-index: 2;
+  width:100%;
+}
+
+.navbar-header a {
+  color: $whiteFont;
+  font-size: 90%;
+  text-transform: $fontuppercase;
+  margin-left: 5px;
+}
+
+.navbar-header a:hover,
+.navbar-header li a:active {
+  margin-bottom: -2px;
+  border-bottom: 2px solid $darkRed;
+}
+
+.nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.nav li a:link,
+.nav li a:visited {
+  padding-top: 16px;
+  padding-bottom: 11px;
+  padding-left: 0;
+  padding-right: 0;
+  color: $whiteFont;
+  text-decoration: none;
+  text-transform: $fontuppercase;
+  font-size: 90%;
+}
+
+.nav li a:hover,
+.nav li a:active {
+  margin-bottom: -2px;
+  border-bottom: 2px solid $darkRed;
+}
+
+.router-link-active{
+  border-bottom: 2px solid $darkRed;
+  margin-bottom: -2px;
+}
+
+.navbar-right{
+  margin-right: 5px;
+}
+
+/* ---- MOBILE NAVIGATION ---- */
+.mobile-nav-icon {
+  float: left;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
+.mobile-navigation
+{
+  display: none;
+}
+
+.mobile-navigation .nav li a:hover,
+.mobile-navigation .nav li a:active {
+  margin-bottom: -2px;
+  border-bottom: 2px solid $darkRed;
+}
+
+.mobile-navigation .router-link-active{
+  border-bottom: 2px solid $darkRed;
+  margin-bottom: -2px;
+}
+

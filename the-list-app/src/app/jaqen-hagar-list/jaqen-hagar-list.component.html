@@ -1,0 +1,9 @@
+<div class="row" id="list-section">
+  <div class="col" id="col-list">
+    <h2>Jaqen H'agar List - Click Item to change status</h2>
+    <app-list-item
+      *ngFor="let l of list | filterJaqen; let i = index"
+      [list]="l"
+      [index]="i"></app-list-item>
+  </div>
+</div>

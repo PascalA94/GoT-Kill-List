@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="listForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            maxlength="16"
+            id="name"
+            formControlName="name"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="reason">Reason <span>(80 Characters Max)</span></label>
+          <textarea
+            rows="4"
+            maxlength="80"
+            type="text"
+            id="reason"
+            formControlName="reason"
+            class="form-control">
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select
+            id="status"
+            formControlName="status"
+            class="form-control"
+            >
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+          </select>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="assigned">Assigned</label>
+          <select
+            id="assigned"
+            formControlName="assigned"
+            class="form-control">
+            <option value="Arya">Arya</option>
+            <option *ngIf="assignToJaqen" value="Jaqen">Jaqen</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button
+          type="submit"
+          class="btn btn-success"
+          [disabled]="!listForm.valid">Save</button>
+        <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>

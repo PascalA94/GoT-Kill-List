@@ -1,0 +1,43 @@
+$whiteFont: #fff;
+$fontuppercase: uppercase;
+$fontweight: 300;
+$letterspacing: 1px;
+$darkRed: #6d2018;
+$lightRed: #88291f;
+
+
+h1{
+  font-weight: $fontweight;
+  text-transform: $fontuppercase;
+  letter-spacing: $letterspacing;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 4px;
+  color: $whiteFont;
+}
+
+h2{
+  font-weight: 400;
+  text-transform: $fontuppercase;
+  letter-spacing: $letterspacing;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 150%;
+  word-spacing: 4px;
+}
+
+.row{
+  float: left;
+  margin-right:0;
+}
+
+#list-section{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#col-list {
+  width: 130%;
+}

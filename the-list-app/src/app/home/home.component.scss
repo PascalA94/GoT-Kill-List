@@ -1,0 +1,70 @@
+@import "../../assets/scss/main";
+
+header{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../assets/img/background-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1{
+  @extend h1
+}
+
+.main-text-box{
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---- LINKS ---- */
+a:link,
+a:visited {
+  color: $darkRed;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $darkRed;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/* ---- BUTTONS ---- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-success:link,
+.btn-success:visited,
+input[type=submit] {
+  background-color: $lightRed;
+  border: 1px solid $lightRed;
+  color: $whiteFont;
+  margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: $darkRed;
+}
+
+.btn-success:hover,
+.btn-success:active,
+input[type=submit] {
+  border: 1px solid $darkRed;
+}

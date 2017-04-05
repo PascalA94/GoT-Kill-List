@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" class="navbar-brand">Home</a>
+      <a class="mobile-nav-icon"><i [ngClass]="isNavVisible ? 'glyphicon glyphicon-remove' : 'glyphicon glyphicon-menu-hamburger'" (click)="toggleNav() "></i></a>
+    </div>
+
+    <div class="navigation">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="router-link-active"><a routerLink="/arya-starks-list">Ayrias List</a></li>
+        <li routerLinkActive="router-link-active"><a routerLink="/jaqen-hagar-list">Jaqen Hagar List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive="router-link-active"><a routerLink="/manage-lists">Manage List</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-navigation">
+      <ul class="nav navbar-nav" [ngStyle]="{display:displayString}">
+        <li><a routerLink="/">Home</a></li>
+        <li routerLinkActive="router-link-active"><a routerLink="/arya-starks-list">Ayrias List</a></li>
+        <li routerLinkActive="router-link-active"><a routerLink="/jaqen-hagar-list">Jaqen Hagar List</a></li>
+        <li routerLinkActive="router-link-active"><a routerLink="/manage-lists">Manage List</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

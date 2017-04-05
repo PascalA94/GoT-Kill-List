@@ -1,0 +1,14 @@
+@import "../../assets/scss/main";
+
+.row{
+  @extend .row;
+}
+
+#list-section{
+  @extend #list-section;
+}
+
+#col-list {
+  @extend #col-list;
+}
+

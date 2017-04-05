@@ -1,0 +1,19 @@
+a{
+  display: block;
+  float: left;
+  width: 24%;
+  height: 150px;
+  margin: 10px 10px;
+  font-size: 80%;
+}
+
+.pull-left .list-group-item-text{
+  width: 200px;
+  word-wrap: break-word;
+}
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 8px;
+  width: 200px;
+}

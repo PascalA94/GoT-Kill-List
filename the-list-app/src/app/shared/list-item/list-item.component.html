@@ -1,0 +1,23 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix"
+  [ngStyle]="{backgroundColor: list.status.startsWith('Dead') ? 'rgb(192, 57, 43)' : 'rgb(236, 240, 241)'}"
+  (click)="onItemClick(list)">
+  <div class="pull-left" >
+    <h4 class="list-group-item-heading" [ngStyle]="{textDecoration: list.status.startsWith('Dead') ? 'line-through' : 'none'}">{{ list.name }}</h4>
+    <hr>
+    <label for="reason">Reason:</label>
+    <p class="list-group-item-text" id="reason">{{ list.reason }}</p>
+  </div>
+
+  <div class="pull-right">
+    <label for="status">Status:</label>
+    <p class="list-group-item-text" id="status" [ngStyle]="{color: list.status.startsWith('Dead') ? 'rgb(236, 240, 241)' : 'rgb(46, 204, 113)'}">{{ list.status }}</p>
+    <br>
+
+    <label for="assigned">Assigned To:</label>
+    <p class="list-group-item-text" id="assigned">{{ list.assigned }}</p>
+  </div>
+</a>

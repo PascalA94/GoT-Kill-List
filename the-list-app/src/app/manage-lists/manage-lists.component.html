@@ -1,0 +1,17 @@
+<div class="row" id="list-section">
+  <div class="col" id="col-list">
+    <h2>Manage List - Click Item to change status</h2>
+    <app-list-item
+      *ngFor="let l of list; let i = index"
+      [list]="l"
+      [index]="i"></app-list-item>
+  </div>
+</div>
+<div class="row" id="new-section">
+  <div class="col" >
+    <button class="btn btn-success" (click)="onNewListItem()">New Name To List</button>
+  </div>
+  <div class="col">
+    <router-outlet></router-outlet>
+  </div>
+</div>

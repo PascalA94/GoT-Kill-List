@@ -1,0 +1,15 @@
+@import "../../assets/scss/main";
+
+.row {
+  @extend .row;
+}
+
+#list-section{
+  @extend #list-section;
+}
+
+#col-list {
+  //@extend #col-list;
+  //Not extending link the other pages. Have to set to a different percentage.
+  width: 175.5%;
+}

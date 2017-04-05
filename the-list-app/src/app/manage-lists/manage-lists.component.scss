@@ -1,0 +1,31 @@
+@import "../../assets/scss/main";
+
+.row{
+  @extend .row;
+}
+
+h2{
+  @extend h2;
+}
+
+#list-section{
+  @extend #list-section
+}
+
+#col-list {
+  @extend #col-list
+}
+
+#new-section{
+  float: right;
+  width: 20%;
+  margin-top: 65px;
+}
+
+#new-section .btn {
+  float: right;
+  margin-right: 30px;
+}
+
+
+
